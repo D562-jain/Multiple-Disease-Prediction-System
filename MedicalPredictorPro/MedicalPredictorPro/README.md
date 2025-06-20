@@ -108,15 +108,3 @@ This is a web-based medical prediction system that uses machine learning to pred
 - Fallback training using provided datasets
 - Model versioning through file timestamps
 
-## Changelog
-
-```
-Changelog:
-- June 20, 2025. Initial setup
-```
-
-## User Preferences
-
-```
-Preferred communication style: Simple, everyday language.
-```
