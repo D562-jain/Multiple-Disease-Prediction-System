@@ -1,0 +1,95 @@
+ Overall Design & Aesthetics:
+
+The web app should visually resemble a professional medical application.
+Use a suitable background, a clean and professional color palette (e.g., shades of blue, green, white, or light grey), and appropriate medical-themed icons or imagery to convey a healthcare feel.
+Ensure the design is responsive and user-friendly on both desktop and mobile devices.
+2. Main Navigation and Sections:
+The web app should feature a clear navigation bar or menu leading to two main sections:
+
+"About" Section:
+
+This section should provide a brief overview of the "Multiple Disease Prediction System."
+Explain its purpose, the diseases it predicts, and any disclaimers (e.g., "This tool is for informational purposes only and not a substitute for professional medical advice.").
+Include placeholder text for this content.
+"Prediction" Section:
+
+This will be the core functionality of the app.
+Within this section, there should be clear options or buttons for selecting the disease the user wants to predict:
+Diabetes Prediction
+Heart Disease Prediction
+Parkinson's Disease Prediction
+3. Disease-Specific Prediction Forms:
+When a user clicks on one of the disease prediction options, a dedicated form should appear. Each form must:
+
+Include a "User Name" and "Age" field.
+
+Include specific input fields for the disease, as listed below. These fields should be appropriate HTML input types (text, number, select dropdowns for categorical data, etc.).
+
+Have a clear "Predict" button to submit the form data to the backend.
+
+Display the prediction result clearly on the same page after the backend response is received (e.g., "Prediction: Positive" or "Prediction: Negative," along with any confidence score if your backend provides it).
+
+1. Diabetes Prediction Form:
+
+User Name
+Age
+No of Pregnancies
+Glucose
+BloodPressure
+SkinThickness
+Insulin
+BMI
+DiabetesPedigreeFunction
+(Note: Use only these fields as crucial for the model)
+2. Heart Disease Prediction Form:
+
+User Name
+Age
+Sex (e.g., dropdown: Male, Female)
+CP (Chest Pain Type)
+TrestBPS (Resting Blood Pressure)
+Chol (Serum Cholestoral)
+FBS (Fasting Blood Sugar > 120 mg/dl)
+RestECG (Resting Electrocardiographic Results)
+Thalach (Maximum Heart Rate Achieved)
+Exang (Exercise Induced Angina)
+OldPeak (ST depression induced by exercise relative to rest)
+Slope (The slope of the peak exercise ST segment)
+CA (Number of major vessels (0-3) colored by flourosopy)
+Thal (Thal: 0 = normal; 1 = fixed defect; 2 = reversable defect)
+(Note: Use only these fields as crucial for the model)
+3. Parkinson's Disease Prediction Form:
+
+User Name
+Age
+MDVP:Fo(Hz)
+MDVP:Fhi(Hz)
+MDVP:Flo(Hz)
+MDVP:Jitter(%)
+MDVP:Jitter(Abs)
+MDVP:RAP
+MDVP:PPQ
+Jitter:DDP
+MDVP:Shimmer
+MDVP:Shimmer(dB)
+Shimmer:APQ3
+Shimmer:APQ5
+MDVP:APQ
+Shimmer:DDA
+NHR
+HNR
+RPDE
+DFA
+spread1
+spread2
+D2
+PPE
+(Note: Use only these fields as crucial for the model)
+4. Backend-Frontend Integration:
+
+Crucially, the frontend must be properly connected to the Python backend.
+When a user submits a form, the input data should be sent to the appropriate backend endpoint (e.g., /predict/diabetes, /predict/heart, /predict/parkinson).
+The web app should handle the backend's response (e.g., JSON containing the prediction) and display it to the user.
+Include error handling for network issues or invalid responses from the backend.
+Deliverables:
+Provide the complete HTML, CSS, and JavaScript code for the frontend, ready to be integrated with my existing Python backend on Replit. Ensure all necessary scripts and stylesheets are linked correctly.
